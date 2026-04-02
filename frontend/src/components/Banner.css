@@ -1,0 +1,63 @@
+.banner-container {
+  background-color: var(--color-primary-blue);
+  color: var(--color-surface-white);
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  font-size: 13px;
+  font-weight: 500;
+  padding-top: max(44px, var(--space-sm)); /* account for device status bar area if needed, though usually not accessible in web unless PWA */
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px; /* bound on larger screens */
+  margin: 0 auto;
+}
+
+.banner-text-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.banner-icon {
+  flex-shrink: 0;
+  margin-top: -2px; /* optical alignment */
+}
+
+.banner-text {
+  white-space: nowrap;
+}
+
+.banner-action-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.banner-cta {
+  background-color: var(--color-accent-orange);
+  color: var(--color-surface-white);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+.banner-close {
+  color: var(--color-surface-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.banner-close:hover {
+  opacity: 1;
+}
